@@ -7,7 +7,8 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = '1';
+const prefix = 'بريفكس';
+const discord_token = "توكن";
 client.login(discord_token);
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
@@ -255,6 +256,3 @@ function isYoutube(str) {
       message.channel.send({embed});
      }
     });
-
-
-client.login(process.env.BOT_TOKEN); 
