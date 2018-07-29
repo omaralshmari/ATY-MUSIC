@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const prefix = "برفكسك";
+ const prefix = "1";
 client.on('ready', () => {
     console.log('I am ready!');
 });
