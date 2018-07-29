@@ -1,18 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const prefix = "2";
-client.on('ready', () => {
-    console.log('I am ready!');
-});
+const ytdl = require('ytdl-core');
+const request = require('request');
+const fs = require('fs');
+const getYoutubeID = require('get-youtube-id');
+const fetchVideoInfo = require('youtube-info');
 
-client.on('message', message => {
-    if (message.content === 'zg') {const Discord = require('discord.js');
-const client = new Discord.Client();
- const prefix = "1";
-client.on('ready', () => {
-    console.log('I am ready!');
+const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
+const prefix = '1';
+client.on('ready', function() {
+    console.log(`i am ready ${client.user.username}`);
 });
-      }
 /*
 ////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -228,24 +226,26 @@ function isYoutube(str) {
     return str.toLowerCase().indexOf('youtube.com') > -1;
 }
  client.on('message', message => {
-     if (message.content === prefix +"help") {
+     if (message.content === prefix +"مساعfffffgfsvbadfgqegavzxfawfdafgsbaghhhhhhhhhhaerfgدة") {
     const embed = new Discord.RichEmbed()
      .setColor("RANDOM")
      .addField(`**__أوامر البوت__**`,`
 .    **${prefix}تعال**
      عشان يدخل البوت الروم
-     **${prefix}play**
+     **${prefix}شغل**
      امر تشغيل الأغنية , !شغل الرابط او اسم الأعنية
-     **${prefix}skip**
+     **${prefix}تخطي**
      تغير الأغنية
-     **${prefix}pause**
+     **${prefix}وقف**
      ايقاف الأغنية
-     **${prefix}resume**
+     **${prefix}كمل**
      مواصلة الأغنية
-     **${prefix}vol**
+     **${prefix}صوت**
      مستوى الصوت 1-100
-     **${prefix}stop**
+     **${prefix}اطلع**
      خروج البوت من الروم
+
+
      prefix = ${prefix}
      ping = ${Date.now() - message.createdTimestamp}ms
      for help = <Marshall#7799>
@@ -254,6 +254,3 @@ function isYoutube(str) {
       message.channel.send({embed});
      }
     });
-
-
-client.login(process.env.BOT_TOKEN); 
