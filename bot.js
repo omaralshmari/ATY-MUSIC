@@ -5,9 +5,16 @@ const request = require('request');
 const fs = require('fs');
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
-
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-    console.log(`i am ready ${client.user.username}`);
+ const prefix = "1";
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
+client.on('message', message => {
+    if (message.content === 'zg') {
+        message.reply('pong');
+      }
 });
 /*
 ////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -242,8 +249,6 @@ function isYoutube(str) {
      مستوى الصوت 1-100
      **${prefix}اطلع**
      خروج البوت من الروم
-
-
      prefix = ${prefix}
      ping = ${Date.now() - message.createdTimestamp}ms
      for help = <Marshall#7799>
