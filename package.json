@@ -16,7 +16,8 @@
     "youtube-info": "^1.2.0",
     "ytdl-core": "^0.21.1",
     "simple-youtube-api": "^5.0.2",
-    "queue": "^4.4.2"
+    "queue": "^4.4.2",
+    "ffmpeg": "0.0.4"
   }
 }
 
