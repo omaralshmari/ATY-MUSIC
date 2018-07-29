@@ -1,9 +1,12 @@
 const Discord = require('discord.js');
-const ytdl = require('ytdl-core');
-const request = require('request');
-const fs = require('fs');
-const getYoutubeID = require('get-youtube-id');
-const fetchVideoInfo = require('youtube-info');
+const client = new Discord.Client();
+ const prefix = "2";
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
+client.on('message', message => {
+    if (message.content === 'zg') {const Discord = require('discord.js');
 const client = new Discord.Client();
  const prefix = "1";
 client.on('ready', () => {
