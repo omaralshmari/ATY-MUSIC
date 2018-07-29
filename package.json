@@ -15,7 +15,8 @@
     "request": "^2.87.0",
     "youtube-info": "^1.2.0",
     "ytdl-core": "^0.21.1",
-    "simple-youtube-api": "^5.0.2"
+    "simple-youtube-api": "^5.0.2",
+    "queue": "^4.4.2"
   }
 }
 
