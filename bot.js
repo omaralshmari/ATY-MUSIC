@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const prefix = "برفكسك";
+ const prefix = "1";
 client.on('ready', () => {
     console.log('I am ready!');
 });
@@ -9,6 +9,7 @@ client.on('message', message => {
     if (message.content === 'zg') {
         message.reply('pong');
       }
+});
 /*
 ////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -242,8 +243,6 @@ function isYoutube(str) {
      مستوى الصوت 1-100
      **${prefix}اطلع**
      خروج البوت من الروم
-
-
      prefix = ${prefix}
      ping = ${Date.now() - message.createdTimestamp}ms
      for help = <Marshall#7799>
@@ -252,3 +251,6 @@ function isYoutube(str) {
       message.channel.send({embed});
      }
     });
+
+
+client.login(process.env.BOT_TOKEN); 
